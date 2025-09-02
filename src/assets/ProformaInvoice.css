@@ -1,0 +1,338 @@
+/* === Invoice Container === */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f7f5;
+  margin: 0;
+  padding: 0;
+}
+
+.max-w-4xl {
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* === Header === */
+h1 {
+  letter-spacing: 2px;
+  color: #14532d; /* deep green */
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #065f46;
+  letter-spacing: 1px;
+}
+
+/* === Invoice Info Bar === */
+.bg-green-200 {
+  background: linear-gradient(90deg, #bbf7d0, #86efac);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+/* === Consigner/Consignee === */
+.bg-green-50,
+.bg-yellow-50 {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.bg-green-50 h3,
+.bg-yellow-50 h3 {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+/* === Inputs === */
+input {
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  padding: 2px 4px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 3px #16a34a;
+}
+
+/* === Product Table === */
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 1px solid #d1d5db;
+  text-align: center;
+  padding: 6px;
+}
+
+table th {
+  background: #fde68a;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+table tr:nth-child(even) {
+  background: #fef9c3;
+}
+
+table tr:hover {
+  background: #fef08a;
+}
+
+/* === Totals Section === */
+.grid input {
+  font-weight: bold;
+  text-align: left;
+  color: #374151;
+}
+
+.grid span {
+  font-weight: bold;
+  color: #111827;
+}
+
+/* === Terms & Conditions === */
+.bg-green-300 {
+  border-left: 5px solid #15803d;
+  background: #d9f99d;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+/* === Bank Details === */
+.bg-yellow-200 {
+  background: #fef9c3;
+  border: 1px dashed #eab308;
+  padding: 12px;
+}
+
+.bg-yellow-200 strong {
+  color: #92400e;
+}
+
+.bg-yellow-200 span {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.75rem;
+  color: #374151;
+}
+
+/* === Buttons === */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+
+
+
+
+
+/* === ULTRA PROFESSIONAL PRINT CSS === */
+@media print {
+  /* Page setup */
+  @page {
+    size: A4 portrait;
+    margin: 15mm 12mm 15mm 12mm;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.4;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Remove unnecessary styling */
+  .shadow-lg,
+  .rounded-xl,
+  .max-w-4xl {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  input,
+  textarea {
+    border: none !important;
+    background: transparent !important;
+    color: #000 !important;
+    font-weight: 600;
+    font-size: 11pt;
+    padding: 0;
+  }
+
+  /* === HEADINGS === */
+  h1 {
+    font-size: 20pt !important;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    color: #000 !important;
+    border-bottom: 2px solid #000;
+    padding-bottom: 6px;
+  }
+
+  h2 {
+    font-size: 13pt !important;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 12px 0;
+    color: #000 !important;
+  }
+
+  h3 {
+    font-size: 11pt !important;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: #111 !important;
+  }
+
+  /* === COMPANY / CONSIGNER / CONSIGNEE BLOCKS === */
+  .bg-green-200,
+  .bg-green-50,
+  .bg-yellow-100,
+  .bg-yellow-200,
+  .bg-green-300 {
+    background: #f9f9f9 !important;
+    border: 1px solid #000 !important;
+    padding: 8px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* === PRODUCT TABLE === */
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin-top: 8px;
+    page-break-inside: auto;
+  }
+
+  table th,
+  table td {
+    border: 1px solid #000 !important;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 10.5pt;
+  }
+
+  table th {
+    background: #e5e7eb !important; /* light gray */
+    font-weight: bold !important;
+    text-transform: uppercase;
+    font-size: 10pt;
+  }
+
+  table tr:nth-child(even) td {
+    background: #f9fafb !important;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  /* === TOTALS === */
+  .totals-row {
+    background: #f3f4f6 !important;
+    font-weight: bold;
+    font-size: 11pt;
+  }
+
+  .grid div,
+  .totals-box {
+    border: 1px solid #000 !important;
+    padding: 8px !important;
+    font-weight: bold;
+    font-size: 11pt;
+    background: #f4f4f4 !important;
+  }
+
+  /* === TERMS & CONDITIONS === */
+  .terms {
+    border-top: 2px solid #000;
+    padding-top: 8px;
+    font-size: 9.5pt !important;
+    color: #111 !important;
+  }
+
+  /* === BANK / PAYMENT DETAILS === */
+  .payment-details {
+    border: 1px solid #000 !important;
+    padding: 10px !important;
+    background: #fdfdfd !important;
+    font-size: 10.5pt;
+  }
+
+  .payment-details strong {
+    color: #000 !important;
+  }
+
+  /* === FOOTER === */
+  footer {
+    border-top: 1px dashed #000;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 6px;
+    font-size: 9pt;
+    color: #333 !important;
+  }
+
+  /* === PAGE BREAKS FOR MULTI-PAGE INVOICE === */
+  .page-break {
+    page-break-before: always;
+  }
+}
+
+
+
+
+/* Make table scroll horizontally on small screens */
+.responsive-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table should shrink gracefully */
+.responsive-table table {
+  min-width: 600px; /* Prevent breaking layout on small screens */
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Make buttons stack on smaller screens */
+@media (max-width: 640px) {
+  .action-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .action-buttons button {
+    width: 100%; /* full width on mobile */
+  }
+}

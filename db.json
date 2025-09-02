@@ -1,0 +1,52 @@
+{
+  "proformaInvoice": {
+    "id": 1,
+    "date": "2025-09-01",
+    "consignerName": "Agri Science Co.",
+    "consignerAddress": "Rajkot ",
+    "consignerEmail": "charan@agriscience.com",
+    "consignerWebsite": "www.agriscience.com",
+    "consigneeName": "Lehan",
+    "consigneeLocation": "Warangal, Telangana, India",
+    "consigneeGst": "36ABCDE1234F2Z5e",
+    "product": [
+      {
+        "productName": "Mono-Gaurd",
+        "quantity": "50",
+        "packing": "Bag",
+        "pcs": "50",
+        "rate": "500",
+        "amount": "25000.00"
+      },
+      {
+        "productName": "iffco",
+        "quantity": "10",
+        "packing": "Bottle",
+        "pcs": "2",
+        "rate": "200",
+        "amount": "2000.00"
+      },
+      {
+        "productName": "Nano urea",
+        "quantity": "10",
+        "packing": "Bag",
+        "pcs": "3",
+        "rate": "320",
+        "amount": "3200.00"
+      },
+      {
+        "productName": "Snake",
+        "quantity": "3",
+        "packing": "bottle",
+        "pcs": "332",
+        "rate": "333",
+        "amount": "999.00"
+      }
+    ],
+    "grossTotal": 31199,
+    "gst": "1559.95",
+    "netTotal": "32758.95",
+    "transport": "Flipkart services ",
+    "note": "Delivery within 7 working days after payment."
+  }
+}
